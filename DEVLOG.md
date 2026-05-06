@@ -22,3 +22,22 @@
 **Verification**
 
 - `pip install -e .` on Windows; `wiegand-sniffer mock-sniff` and `mifare-analyze lab_sim/data/sample_weak.eml` return valid JSON (synthetic dump uses transport-valid ACL bytes `78 87 96`).
+
+---
+
+## 2026-05-06 — GitHub remote
+
+**What changed**
+
+- Initialized a standalone git repository in `rfid-security-toolkit/`, added `.gitignore`, committed initial tree, created public remote `origin`.
+
+**Why**
+
+- Publish the toolkit independently of the `portfolio-website` monorepo.
+
+**Next steps**
+
+- Optionally add GitHub Actions (lint / `pip install -e .` smoke test).
+- Link from portfolio README if desired.
+
+**Remote:** https://github.com/PjDailey11/rfid-security-toolkit
