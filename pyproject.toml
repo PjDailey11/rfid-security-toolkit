@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfid-security-toolkit"
+version = "0.1.0"
+description = "Educational RFID/Wiegand analysis tools for authorized lab use only."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "RFID Security Toolkit" }]
+dependencies = []
+
+[project.optional-dependencies]
+pi = ["RPi.GPIO>=0.7.1"]
+
+[project.scripts]
+wiegand-sniffer = "rfid_wiegand_sniffer.cli:main"
+mifare-analyze = "mifare_analyzer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
