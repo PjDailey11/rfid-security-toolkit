@@ -41,3 +41,20 @@
 - Link from portfolio README if desired.
 
 **Remote:** https://github.com/PjDailey11/rfid-security-toolkit
+
+---
+
+## 2026-05-06 — README and package metadata
+
+**What changed**
+
+- Expanded `README.md`: richer project description (scope, audience, non-goals), step-by-step install for Windows vs macOS/Linux, venv + `pip` upgrade, editable vs regular install, Pi extras and level-shifting note, verification commands and troubleshooting hint if scripts are missing.
+- Enriched `pyproject.toml` `description` and added `keywords` for discovery.
+
+**Why**
+
+- Reduce onboarding friction and set accurate expectations before anyone wires GPIO or loads dumps.
+
+**Next steps**
+
+- None required; optional PyPI publish would reuse the same README.

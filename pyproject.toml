@@ -5,11 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "rfid-security-toolkit"
 version = "0.1.0"
-description = "Educational RFID/Wiegand analysis tools for authorized lab use only."
+description = "Educational toolkit for authorized labs: Wiegand 26-bit decode and Pi GPIO sniffing, offline MIFARE Classic 1K dump analysis (ACL, default keys, manufacturer block), and lab-focused attack/mitigation documentation."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "RFID Security Toolkit" }]
+keywords = ["rfid", "wiegand", "mifare", "physical-security", "access-control", "gpio", "raspberry-pi"]
 dependencies = []
 
 [project.optional-dependencies]
